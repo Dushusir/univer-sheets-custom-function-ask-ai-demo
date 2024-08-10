@@ -1,0 +1,30 @@
+{
+  "name": "univer-sheets-custom-function",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@univerjs/core": "^0.2.7",
+    "@univerjs/design": "^0.2.7",
+    "@univerjs/docs": "^0.2.7",
+    "@univerjs/docs-ui": "^0.2.7",
+    "@univerjs/engine-formula": "^0.2.7",
+    "@univerjs/engine-numfmt": "^0.2.7",
+    "@univerjs/engine-render": "^0.2.7",
+    "@univerjs/sheets": "^0.2.7",
+    "@univerjs/sheets-formula": "^0.2.7",
+    "@univerjs/sheets-numfmt": "^0.2.7",
+    "@univerjs/sheets-ui": "^0.2.7",
+    "@univerjs/ui": "^0.2.7",
+    "@wendellhu/redi": "0.15.2"
+  },
+  "devDependencies": {
+    "@univerjs/vite-plugin": "^0.4.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.12"
+  }
+}

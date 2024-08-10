@@ -26,6 +26,9 @@ dependencies:
   '@univerjs/engine-render':
     specifier: ^0.2.7
     version: 0.2.7(@univerjs/core@0.2.7)(rxjs@7.8.1)
+  '@univerjs/protocol':
+    specifier: ^0.1.38
+    version: 0.1.38(@grpc/grpc-js@1.11.1)(rxjs@7.8.1)
   '@univerjs/sheets':
     specifier: ^0.2.7
     version: 0.2.7(@grpc/grpc-js@1.11.1)(@univerjs/core@0.2.7)(@univerjs/engine-formula@0.2.7)(@univerjs/engine-numfmt@0.2.7)(@univerjs/rpc@0.2.7)(rxjs@7.8.1)

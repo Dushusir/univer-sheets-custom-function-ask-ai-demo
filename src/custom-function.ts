@@ -175,6 +175,7 @@ export interface AskFormulaRequest {
     /** the prompt for the model */
     unitId: string;
     rows: Row[];
+    ask: string;
 }
 
 export interface AskFormulaResponse {
@@ -205,7 +206,7 @@ export enum CellType {
 function convertToAskFormulaRequest(range: BaseValueObject, unitId: string, prompt: BaseValueObject): AskFormulaRequest {
 
     const promptValueObject = prompt.isArray() ? (prompt as ArrayValueObject).getFirstCell() : prompt;
-    const promptValue = promptValueObject.getValue().toString(); 
+    const ask = promptValueObject.getValue().toString(); 
 
     if (range.isArray()) {
 
@@ -237,7 +238,9 @@ function convertToAskFormulaRequest(range: BaseValueObject, unitId: string, prom
 
         return {
             unitId,
-            rows: rows
+            rows,
+            ask
+
         };
     }
 
@@ -253,7 +256,8 @@ function convertToAskFormulaRequest(range: BaseValueObject, unitId: string, prom
                     }
                 ]
             }
-        ]
+        ],
+        ask
     }
 
 }
